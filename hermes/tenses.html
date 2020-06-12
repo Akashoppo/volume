@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+ul.b {
+  border-left: 5px solid red;
+  background-color: #f1f1f1;
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+/* Style the footer */
+.footer {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.divu {
+  background-color: lightgrey;
+  width: 99%;
+  border: 15px solid green;
+  padding: 20px;
+  margin: 20px;
+}
+
+.solid {
+  border-style: solid;
+  border-color: black;
+  background-color: black;
+
+}
+
+
+</style>
+</head>
+<body>
+  <div class="divu">
+
+<div class="header">
+  <span>
+  <img src="images/hermes.png" width="50px" height="50px"></span><span><b style="font-size:2.0em">Hermes.com</b></span><span><img src="images/hermes.png" width="50px" height="50px"></span>
+  <p>The god of language</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="#">Chapters</a>
+  <a href="#">About us</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Tenses</h2>
+    <img src="images/english-tenses.jpg" alt="English tenses">
+    <p>There are total twelve possible tenses in english.</p>
+  </div>
+  
+  <div class="column">
+    <ul class="b"><li><h2>Simple Present Tense</h2></li></ul>
+    <ol>
+    <li><p>S+V1+O</p></li>
+    <li><p>S+do/does+not+V1+O</p></li>
+    <li><p>Do/does+S+V1+O</p></li>
+    </ol>
+  </div>
+  
+  <div class="column">
+    <ul class="b"><li><h2>Present Continuous Tense</h2></li></ul>
+    <ol>
+    <li><p>S+be+V1+ing+O</p></li>
+    <li><p>S+be+not+V1+ing+O</p></li>
+    <li><p>be+S+V1+ing+O</p></li>
+    </ol>
+  </div>
+
+  <div class="column">
+    <ul class="b"><li><h2>Present Perfect Tense</h2></li></ul>
+    <ol>
+    <li><p>S+has/have+been+O</p></li>
+    <p>or</p>
+    <p>S+has/have+V3+O</p>
+    <br>
+    <li><p>S+has/have+not+been+O</p></li>
+    <p>or</p>
+    <p>S+has/have+not+V3+O</p>
+    <br>
+    <li><p>Have/has+S+been+O</p></li>
+    <p>or</p>
+    <p>Have/has+S+V3+O</p>
+    </ol>
+  </div>
+
+  <div class="column">
+    <ul class="b"><li><h2>Present Perfect Continuous Tense</h2></li></ul>
+    <ol>
+    <li><p>S+have/has+been+Ving</p></li>
+    <li><p>S+have/has+not+been+Ving</p></li>
+    <li><p>Have/has+S+been+Ving</p></li>
+    </ol>
+  </div>
+
+  <div class="column">
+    <ul class="b"><li><h2>Simple Past Tense</h2></li></ul>
+    <ol>
+    <li><p>S+tobe(was/were)+O</p></li>
+    <p>or</p>
+    <p>S+V2+O</p>
+    <br>
+    <li><p>S+tobe(was/were)+not+O</p></li>
+    <p>or</p>
+    <p>S+did not+V1+O</p>
+    <br>
+    <li><p>Did+S+V1+O</p></li>
+      
+    </ol>
+  </div>
+
+  <div class="column">
+    <ul class="b"><li><h2>Past Continuous Tense</h2></li></ul>
+    <ol>
+    <li><p>S+tobe(was/were)+Ving+O</p></li>
+    <li><p>S+tobe(was/were)+not+Ving+O</p></li>
+    <li><p>was/were+S+Ving+O</p></li>
+    </ol>
+  </div>
+
+  <div class="column">
+    <ul class="b"><li><h2>Past Perfect Tense</h2></li></ul>
+    <ol>
+    <li><p>S+had+V3+O</p></li>
+    <li><p>S+had+not+V3+O</p></li>
+    <li><p>Had+S+V3+O</p></li>
+    </ol>
+  </div>
+
+  <div class="column">
+    <ul class="b"><li><h2>Past Perfect Continuous Tense</h2></li></ul>
+    <ol>
+        <li><p>S+had+been+Ving+O</p></li>
+        <li><p>S+had+not+been+Ving+O</p></li>
+        <li><p>Had+S+been+Ving+O</p></li>
+    </ol>
+  </div>
+
+  <div class="column">
+    <ul class="b"><li><h2>Simple Future Tense</h2></li></ul>
+    <ol>
+         <li><p>S+will/shall+V1+O</p></li>
+         <p>or</p>
+         <p>S+am/is/are+goingto+V1+O</p>
+         <br>
+         <li><p>S+will/shall+not+V1+O</p></li>
+         <p>or</p>
+         <p>S+am/is/are+not+goingto+V1+O</p>
+         <br>
+         <li><p>will/shall+S+V1+O</p></li>
+         <p>or</p>
+         <p>Am/is/are+S+goingto+V1+O</p>
+    </ol>
+  </div>
+
+  <div class="column">
+    <ul class="b"><li><h2>Future Continuous Tense</h2></li></ul>
+    <ol>
+    <li><p>S+will/shall+be+Ving+O</p></li>
+    <li><p>S+will/shall+not+be+Ving+O</p></li>
+    <li><p>will/shall+S+be+Ving+O</p></li>
+    </ol>
+  </div>
+
+  <div class="column">
+    <ul class="b"><li><h2>Future Perfect Tense</h2></li></ul>
+    <ol>
+          <li><p>S+shall/will+have+been+O</p></li>
+          <li><p>S+shall/will+not+have+been+O</p></li>
+          <li><p>Shall/will+S+have+been+O</p></li>
+    </ol>
+  </div>
+</ul>
+  <div class="column">
+    <ul class="b"><li><h2>Future Perfect Continuous Tense</h2></li></ul>
+    <ol>
+          <li><p>S+shall/will+have+been+Ving+O</p></li>
+          <li><p>S+shall/will+not+have+been+Ving+O</p></li>
+          <li><p>Shall/will+S+have+been+Ving+O</p></li>
+    </ol>
+  </div>
+
+</div>
+
+<div class="footer">
+
+  <div class="solid">
+    <div class="container-fluid">
+      <div class="row">
+    <div class="col-sm-4" style="color: white;">
+      <table>
+        <tr>
+              <img src="images/gmail.png" height="30px" width="30px"><b>akashgajbhiye1993@gmail.com</b>
+        </tr>
+        <br>
+        <br>
+            <tr>
+              <img src="images/phone.png" height="30px" width="30px"><b>9518784731</b>
+            </tr>
+      </table>
+    </div>
+    <div class="col-sm-4" style="color: white;">
+      <table>
+        <tr>
+          <img src="images/locate.jpg" height="30px" width="30px"><b>Nagpur</b>
+        </tr>
+        <br>
+        <br>
+        <tr>
+          <img src="images/helping.jpg" height="30px" width="30px"><b>Ekta Group Foundation</b>
+        </tr>
+      </table>
+
+    </div>
+    <div class="col-sm-4" style="color: white;">
+      <table>
+        <tr>
+        <b>About the Company</b>
+        </tr>
+        <br>
+        <br>
+        <tr>
+        <p>Hermes.com is founded</p>
+        <p>by Ekta Group</p>
+        </tr>
+      </table>
+    </div>
+    <b style="color: white;">follow us on</b>
+    <p><img src="images/instagram.jpg" width="35px" height="35px"><img src="images/twitter.png" width="35px" height="35px"><img src="images/facebook.png" width="35px" height="35px"><img src=" images/linkedin.png" width="35px" height="35px"></p>
+  </div>
+</div>
+  </div>
+
+ 
+     
+</div>
+  
+
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

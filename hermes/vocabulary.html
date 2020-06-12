@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+.round3 {
+  border: 2px solid blue;
+  border-radius: 12px;
+  background-color: lightblue; }
+
+  table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  height: 50px;
+}
+
+/* Style the footer */
+.footer {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.divu {
+  background-color: lightgrey;
+  width: 99%;
+  border: 15px solid green;
+  padding: 20px;
+  margin: 20px;
+}
+
+.solid {
+  border-style: solid;
+  border-color: black;
+  background-color: black;
+
+}
+
+
+</style>
+</head>
+<body>
+  <div class="divu">
+
+<div class="header">
+  <span>
+  <img src="images/hermes.png" width="50px" height="50px"></span><span><b style="font-size:2.0em">Hermes.com</b></span><span><img src="images/hermes.png" width="50px" height="50px"></span>
+  <p>The god of Language</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="#">Chapter</a>
+  <a href="#">About us</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2 style="color: white;">Vocabulary</h2>
+    <p style="color: white;">To improve yours vocabulary.below images are used. These are words about objects(solid,liquid,gas), emotions, terminologies, and imaginations</p>
+  </div>
+  
+  <div class="column">
+    <h2 style="color: white;">Word</h2>
+    <p style="color: white;">Types of Words-There are two main types of word classes: content words (nouns, verbs, adjectives, and adverbs) and function words (adpositions, conjunctions, pronouns, and others).</p>
+    <p style="color: white;">What are the 8 main word classes?<br>Simple definition and examples of 8 word classes - verb, noun, adverb, adjective, determiner, pronoun, conjunction and preposition.</p>
+    <div class="round3">
+    <table>
+  <tr>
+    <th style="color:red;">Verbs</th>
+    <th>Nouns</th>
+    <th style="color:green;">Adjectives</th>
+    <th style="color:blue;">Adverb</th>
+  </tr>
+  
+  <tr>
+    <td style="color:red;">A word that describes what a person or thing does,such as,seem,become,grow</td>
+    <td>A word that identifies a person,place thing idea or quality,such as:woman, dog, building, London, truth, birth</td>
+    <td style="color:green;">A word that describes a noun,such as:red, bad, giant, hairy,shy</td>
+    <td style="color:blue;">A word that gives more information about a verb adjective or another adverb, such as: lazily, easily, abroad, very</td>
+  </tr>
+  <tr>
+    <th>Prepositions</th>
+    <th>Conjunctions</th>
+    <th>Determiners</th>
+    <th>Pronouns</th>
+  </tr>
+  <tr>
+    <td>A word that describes the position of something, the time it happened or the way it is done, such as:under, between, on, after, by</td>
+    <td>A word that connects, phrases or sentences, such as: and because but for, or</td>
+    <td>A word that introduces a noun, such as: an, a, every, this, those, the</td>
+    <td>A word that is used in place of a noun that is a specific person or thing, such as: she, him, mine, we , /i, us, me</td>
+  </tr>
+</table>
+    </div>
+
+    
+
+
+  </div>
+  
+  <div class="column">
+    <h2 style="color: white;">Tables Vocabulary</h2>
+    <img src="images/tables.jpg" width="65%" height="75%">
+  </div>
+
+ <div class="column">
+    <h2 style="color: white;">Vegetables Vocabulary</h2>
+    <img src="images/vegetables.jpg" width="65%" height="75%">
+  </div>
+
+
+   <div class="column">
+    <h2 style="color: white;">Tables Vocabulary</h2>
+    <img src="images/organs.png" width="65%" height="75%">
+  </div>
+
+   <div class="column">
+    <h2>Tables Vocabulary</h2>
+    <img src="" width="65%" height="75%">
+  </div>
+
+
+
+
+<div class="footer">
+  <div class="solid">
+    <div class="container-fluid">
+      <div class="row">
+    <div class="col-sm-4" style="color: white;">
+      <table>
+        <tr>
+              <img src="images/gmail.png" height="30px" width="30px"><b>akashgajbhiye1993@gmail.com</b>
+        </tr>
+        <br>
+        <br>
+            <tr>
+              <img src="images/phone.png" height="30px" width="30px"><b>9518784731</b>
+            </tr>
+      </table>
+    </div>
+    <div class="col-sm-4" style="color: white;">
+      <table>
+        <tr>
+          <img src="images/locate.jpg" height="30px" width="30px"><b>Nagpur</b>
+        </tr>
+        <br>
+        <br>
+        <tr>
+          <img src="images/helping.jpg" height="30px" width="30px"><b>Ekta Group Foundation</b>
+        </tr>
+      </table>
+
+    </div>
+    <div class="col-sm-4" style="color: white;">
+      <table>
+        <tr>
+        <b>About the Company</b>
+        </tr>
+        <br>
+        <br>
+        <tr>
+        <p>Hermes.com is founded</p>
+        <p>by Ekta Group</p>
+        </tr>
+      </table>
+    </div>
+    <b style="color: white;">follow us on</b>
+    <p><img src="images/instagram.jpg" width="35px" height="35px"><img src="images/twitter.png" width="35px" height="35px"><img src="images/facebook.png" width="35px" height="35px"><img src="images/linkedin.png" width="35px" height="35px"></p>
+  </div>
+</div>
+  </div>
+
+ 
+     
+</div>
+  
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

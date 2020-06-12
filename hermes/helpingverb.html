@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.solid {
+  border-style: solid;
+  border-color: black;
+  background-color: black;
+
+}
+
+.divu {
+  background-color: lightgrey;
+  width: 99%;
+  border: 15px solid green;
+  padding: 20px;
+  margin: 20px;
+}
+
+
+</style>
+</head>
+<body>
+
+  <div class="divu">
+
+<div class="header">
+  <h1>Hermes.com</h1>
+  <p>The god of language</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="index.html">Chapters</a>
+  <a href="#">About us</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Modal verbs</h2>
+    <p>A modal verb is a type of verb that is used to indicate modality – that is: likelihood, ability, permission, request, capacity, suggestions, order, obligation, or advice. Modal verbs always accompany the base form of another verb having semantic content.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Can/Could/सकता है</h2>
+    <p>Example-He can speak Portuguese fluently.</p>
+  </div>
+  
+  <div class="column">
+    <h2>May/Might/हो सकना /प्रभाव</h2>
+    <p>Example-"May I sit with you?" she asked shyly.</p>
+  </div>
+
+  <div class="column">
+    <h2>Shall/Should/करेगा /चाहिए</h2>
+    <p> You shall abide by the law.</p>
+  </div>
+
+  <div class="column">
+    <h2>Must/Have to/है</h2>
+    <p>We must not be late.</p>
+  </div>
+
+  <div class="column">
+    <h2>Will/Would/चाहना /पसंद</h2>
+    <p>I will go to the cinema tonight.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="solid">
+    <div class="container-fluid">
+      <div class="row">
+    <div class="col-sm-4" style="color: white;">
+      <table>
+        <tr>
+              <img src="images/gmail.png" height="30px" width="30px"><b>akashgajbhiye1993@gmail.com</b>
+        </tr>
+        <br>
+        <br>
+            <tr>
+              <img src="images/phone.png" height="30px" width="30px"><b>9518784731</b>
+            </tr>
+      </table>
+    </div>
+    <div class="col-sm-4" style="color: white;">
+      <table>
+        <tr>
+          <img src="images/locate.jpg" height="30px" width="30px"><b>Nagpur</b>
+        </tr>
+        <br>
+        <br>
+        <tr>
+          <img src="images/helping.jpg" height="30px" width="30px"><b>Ekta Group Foundation</b>
+        </tr>
+      </table>
+
+    </div>
+    <div class="col-sm-4" style="color: white;">
+      <table>
+        <tr>
+        <b>About the Company</b>
+        </tr>
+        <br>
+        <br>
+        <tr>
+        <p>Hermes.com is founded</p>
+        <p>by Ekta Group</p>
+        </tr>
+      </table>
+    </div>
+    <b style="color: white;">follow us on</b>
+    <p><img src="images/instagram.jpg" width="35px" height="35px"><img src="images/twitter.png" width="35px" height="35px"><img src="images/facebook.png" width="35px" height="35px"><img src=" images/linkedin.png" width="35px" height="35px"></p>
+  </div>
+</div>
+  </div>
+
+ 
+     
+</div>
+  
+
+
+</div>
+
+</body>
+</html>
